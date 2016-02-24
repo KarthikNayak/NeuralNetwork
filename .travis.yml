@@ -1,0 +1,11 @@
+language: go
+sudo: false
+env:
+  global:
+    - GOARCH=amd64
+install:
+  - go get github.com/gonum/matrix/mat64
+notifications:
+  email:
+    on_success: change
+    on_failure: always
